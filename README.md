@@ -1,6 +1,11 @@
 # LBC
 LeBonCoin de la M2L
 
+
+En cours:
+-Design du site
+
+
 Cahiers des charges:
 -Pouvoir créer un compte de manière sécurisée
 -Pouvoir se connecter de manière sécurisée
