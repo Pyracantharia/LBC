@@ -1,9 +1,9 @@
-# LBC
+# LBC de la M2L
 LeBonCoin de la M2L
 <br>
 <br>
 <br>
-<h1>Cahiers des charges</h1<br>
+<h1><center>Cahiers des charges</center></h1<br>
 <br>
 <h2>Mon compte:</h2><br>
 -Pouvoir créer un compte de manière sécurisée (L'application doit disposer d'un formulaire d'inscription avec la méthode POST demandant un email et un mot de passe. Le mot de passe de l'utilisateur doit être chiffré selon l'algorithme MD5 en base de données. Une erreur doit s'afficher s'il manque l'email ou le mot de passe, et si le mot de passe fait moins de 10 caractères.)<br>
