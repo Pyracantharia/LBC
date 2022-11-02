@@ -2,9 +2,6 @@
 LeBonCoin de la M2L
 <br>
 <br>
-En cours:<br>
--Design du site<br>
-<br>
 <br>
 <h1>Cahiers des charges</h1<br>
 <br>
@@ -32,3 +29,6 @@ En cours:<br>
 -Organiser son code selon une architecture MVC (Adopter une architecture Modèle Vue Controlleur bien organisée)<br>
 -Versionning sur Github (Gérer le développement en équipe grâce à Github)<br>
 -Autres (Toute autre démarche démontrée lors de la soutenance sera valorisée)<br>
+<br>
+<h2>En cours:</h2><br>
+-Design du site<br>
