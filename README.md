@@ -9,7 +9,7 @@ En cours:
 Cahiers des charges
 
 Mon compte:
--Pouvoir créer un compte de manière sécurisée (L'application doit disposer d'un formulaire d'inscription avec la méthode POST demandant un email et un mot de passe. Le mot de passe de l'utilisateur doit être chiffré selon l'algorithme MD5 en base de données. Une erreur doit s'afficher s'il manque l'email ou le mot de passe, et si le mot de passe fait moins de 10 caractères.)\n
+-Pouvoir créer un compte de manière sécurisée (L'application doit disposer d'un formulaire d'inscription avec la méthode POST demandant un email et un mot de passe. Le mot de passe de l'utilisateur doit être chiffré selon l'algorithme MD5 en base de données. Une erreur doit s'afficher s'il manque l'email ou le mot de passe, et si le mot de passe fait moins de 10 caractères.)<br>
 -Pouvoir se connecter de manière sécurisée (L'application doit disposer d'un formulaire de connexion avec la méthode POST demandant un email et un mot de passe. Une erreur doit s'afficher si l'email n'existe pas ou si le mot de passe est incorrect.  )
 -Pouvoir créer une annonce (L'utilisateur doit disposer d'un formulaire pour créer une annonce avec comme champs obligatoires le nom de l'annonce, le prix, la description et une photo. D'autres champs peuvent être ajoutés comme la catégorie, etc...)
 -Pouvoir modifier une annonce (L'utilisateur doit pouvoir modifier une annonce déjà créée. Il retrouvera un formulaire avec les informations de l'annonce pré remplis. Il pourra enregistrer ou annuler ses modifications.)
