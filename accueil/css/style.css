@@ -1,0 +1,35 @@
+.container-sm-modif{
+    width: 35%;
+
+   
+    display: flex;
+    justify-content: flex-end;
+   
+    
+
+    
+}
+.container-ssm-modif{
+    width: 45px;
+    display: flex;
+    gap: 10px 20px;
+
+}
+.schearch{
+    display: flex;
+    align-items: baseline;
+    margin-left: 150px;
+    
+}
+.sell{
+    width: 150px;
+    margin-left: 30px;
+}
+.navbar{
+    background-color: #198EF5 ;
+}
+.shadow-header{
+    height: 20px;
+    background-color:#198EF5;
+    box-shadow: 0px 15px 5px #198EF5;
+}
