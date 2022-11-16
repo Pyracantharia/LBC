@@ -4,7 +4,8 @@
    
     display: flex;
     justify-content: flex-end;
-   
+    flex-direction: row-reverse ;
+       
     
 
     
@@ -16,9 +17,15 @@
 
 }
 .schearch{
-    display: flex;
+    
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     align-items: baseline;
-    margin-left: 150px;
+    
+   
+    max-width: 93rem;
+    margin: 0 auto;
     
 }
 .sell{
@@ -28,8 +35,35 @@
 .navbar{
     background-color: #198EF5 ;
 }
-.shadow-header{
-    height: 20px;
-    background-color:#198EF5;
-    box-shadow: 0px 15px 5px #198EF5;
+
+.footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+   
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #198EF5;
+    flex-direction: column;
+
+
+
+}
+.footer-color{
+background-color: white;
+display: flex;
+    justify-content: space-evenly;
+}
+.footer-color-copyright{
+   
+ background-color: white;
+ margin: auto;
+}
+.container-fuid{
+    margin-left: 3%;
+}
+.header-separ{
+    margin-top: 3%;
 }
