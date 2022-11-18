@@ -11,7 +11,7 @@
 <body>
 
 <?php
-require '';
+require 'includes/config.php';
 echo $header;
 ?>
 
