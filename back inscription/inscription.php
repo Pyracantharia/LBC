@@ -114,7 +114,7 @@
                         </div>
 
                         <div class="group-form">
-                            <input type="tel" name="tel" class="form-control" placeholder="telephone" class="form-control" required="required" autocomplete="off" placeholder="Entrez votre numéro ">
+                            <input type="tel" name="tel" placeholder="telephone" class="form-control" required="required" autocomplete="off" placeholder="Entrez votre numéro ">
                             <div class="icon-tel"></div>
                         </div>
 
@@ -129,7 +129,8 @@
                         </div>
 
                         <div class="group-form">
-                            <button type="submit" class="inscription" value="Inscription"></button>
+                            <button type="submit" class="inscription" ></button>
+                            <input type="submit" class="inscription" value="S'inscrire">
                         </div>
                     </form>
 
