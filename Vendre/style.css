@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300&display=swap');
+
+
+/*
+    Element de base 
+*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#vendre{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 2.7em;
+    margin: auto;
+}
+.paragraphe{
+    margin: 20px 0;
+    opacity: 0.81;
+    font-size: 18px;
+}
+
+/*mise en forme du bouton S'inscrire et Connexion avec les bordures radius, une transition de 3s lorsque l'on met sont curseur dessus qui passe en blanc*/
+
+.btn-link, input[type="submit"]{
+    display: block;
+    line-height: 60px;
+    border: 1px solid  rgb(223, 218, 218);
+    width: 230px;
+    height: 60px;
+    text-align: center;
+    margin-left: 150px;
+    border-radius: 9999px;
+    color: #2e4b63;
+    font-size: 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+
+#vendre .title{
+
+    color: #198EF5;
+
+}
+
+
+.group-form{
+
+    margin-bottom: 30px;
+    position: relative;
+    
+}
+
+.group-form  div{
+
+    position: absolute;
+    width: 30px;
+    height: 30px; 
+    top: 6px;
+    left: -45px;
+    
+}
+
+
+
+    
+
+.group-form input[type="text"],
+.group-form input[type="file"],
+.group-form input[type="number"]
+
+
+{
+    width: 500px;
+    height: 40px;
+    border: 1px solid #f0e8e8;
+    border-radius: 50px;
+    padding-left: 15px;
+    outline: none;
+    font-size: 16px;
+}
+
+#vendre.ligne{
+    background: #198ef5;
+    margin: 0 auto;
+}
+
+#vendre .ligne:hover{
+    background: rgb(255, 255, 255);
+    color: #198EF5;
+    border: 1px solid #198EF5;
+}
+
+@media (min-width: 992px){
+    .container{
+        flex-direction: row;
+    }
+
+    #vendre{
+        width: 55%;
+    }
+}
+
+.group-form select{
+    width: 500px;
+    height: 40px;
+    border: 1px solid #f0e8e8;
+    border-radius: 50px;
+    padding-left: 15px;
+    outline: none;
+    font-size: 16px;
+}
+
+.group-form input[type="file"]{
+    color: #198EF5;
+    padding-top: 15px;
+
+}
+ 
