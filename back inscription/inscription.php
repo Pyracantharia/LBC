@@ -91,7 +91,7 @@
                     <p class="paragraphe">
                         Veuillez entrer vos détails de connexion et démarrez votre journée sur LBC M2L
                     </p>
-                    <a href="/Connexion/Connexion.html" class="btn-link connexion">Se connecter</a>
+                    <a href="/back inscription/index.php" class="btn-link connexion">Se connecter</a>
                 </div>
                 <div id="inscription">
                     <h1 class="title">Créer un compte</h1>

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300&display=swap');
+
+
+/*
+    Element de base 
+*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    color: #707070;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+#connexion, #inscription{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 2.7em;
+    margin: 0;
+}
+.paragraphe{
+    margin: 20px 0;
+    opacity: 0.81;
+    font-size: 18px;
+}
+
+/*mise en forme du bouton S'inscrire et Connexion avec les bordures radius, une transition de 3s lorsque l'on met sont curseur dessus qui passe en blanc*/
+
+.btn-link, input[type="submit"]{
+    display: block;
+    line-height: 60px;
+    border: 1px solid  #fff;
+    width: 230px;
+    height: 60px;
+    text-align: center;
+    border-radius: 9999px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: lighter;
+    transition: .3s;
+    cursor: pointer;
+}
+/*
+   on passe sur la mise en forme de la partie gauche "connexion"
+*/
+#connexion{
+    background: #198EF5;
+    text-align: center;
+}
+
+#connexion .title{
+    color: #fff;
+}
+
+#connexion .paragraphe{
+    color: #fff;
+    
+}
+#connexion .connexion:hover{
+    background-color: #fff;
+    color: #198EF5;
+}
+/*
+   on passe sur la mise en forme de la partie droite " inscription"
+*/
+
+#inscription .title{
+    color: #198EF5;
+}
+
+
+.group-form{
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.group-form > div{
+    position: absolute;
+    width: 30px;
+    height: 30px; 
+    top: 6px;
+    left: -45px;
+    
+}
+
+.group-form .icon-user{
+    background: url(/image/user-solid\ \(1\).svg);
+
+    
+}
+
+.group-form .icon-mail{
+    background: url(/image/envelope-solid.svg);
+    
+    
+}
+.group-form .icon-tel{
+    background: url(/image/phone-solid.svg);
+}
+
+.group-form .icon-password{
+    background: url(/image/key-solid.svg);
+    
+}
+
+.group-form input[type="text"],
+.group-form input[type="email"],
+.group-form input[type="password"]
+
+{
+    width: 250px;
+    height: 40px;
+    border: 1px solid #707070;
+    border-radius: 9999px;
+    padding-left: 15px;
+    outline: none;
+    font-size: 16px;
+}
+
+#inscription .inscription{
+    background: #198ef5;
+    margin: 0 auto;
+}
+
+#inscription .inscription:hover{
+    background: #fff;
+    color: #198EF5;
+    border: 1px solid #198EF5;
+}
+
+@media (min-width: 992px){
+    .container{
+        flex-direction: row;
+    }
+
+    #connexion{
+        width: 45%;
+        text-align: center;
+    }
+
+    #inscription{
+        width: 55%;
+    }
+}
