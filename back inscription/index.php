@@ -58,13 +58,13 @@
                 <input type="password" name="password" class="form-control" placeholder="Mot de passe" required="required" autocomplete="off">
             </div>
 
-            <p class="inscription">Je n'ai pas de <span><a href="/Contact/contact.html">compte</a></span></p>
+            <p class="text-center"><a href="inscription.php">Inscription</a></p>
             <div id="connexion">
                 <button type="submit" >Se connecter</button>
             </div>
         </form>
 
-        <p class="text-center"><a href="inscription.php">Inscription</a></p>
+        
     </div>
 
 
