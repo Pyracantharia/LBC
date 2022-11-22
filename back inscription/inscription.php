@@ -109,7 +109,7 @@
                         </div>
 
                         <div class="group-form">
-                            <input input type="email" name="email" class="form-control" placeholder="Email" required="required" autocomplete="off" placeholder="Entrez votre mail *">
+                            <input  type="email" name="email" class="form-control" placeholder="Email" required="required" autocomplete="off" placeholder="Entrez votre mail *">
                             <div class="icon-mail"></div>
                         </div>
 
@@ -129,7 +129,7 @@
                         </div>
 
                         <div class="group-form">
-                            <button type="submit" class="inscription" ></button>
+                            
                             <input type="submit" class="inscription" value="S'inscrire">
                         </div>
                     </form>
