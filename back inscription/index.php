@@ -58,7 +58,7 @@
                 <input type="password" name="password" class="form-control" placeholder="Mot de passe" required="required" autocomplete="off">
             </div>
 
-            <p class="text-center"><a href="inscription.php">Inscription</a></p>
+            <p class="inscription"><a href="inscription.php">Tu n'a pas encore de compte ? : Inscription</a></p>
             <div id="connexion">
                 <button type="submit" >Se connecter</button>
             </div>
