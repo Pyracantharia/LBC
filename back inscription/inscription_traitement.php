@@ -53,7 +53,7 @@
                              header('Location:inscription.php?reg_err=success');
                              die();
 
-                            }else{header('Location:inscription.php?reg_err=tel_bad');die();}
+                            }else{header('Location:inscription.php?reg_err=tel_bad');die();/*c'est pareil exit();*/}
                         }else{ header('Location: inscription.php?reg_err=password'); die();}
                     }else{ header('Location: inscription.php?reg_err=email'); die();}
                 }else{ header('Location: inscription.php?reg_err=email_length'); die();}
