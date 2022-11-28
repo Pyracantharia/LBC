@@ -16,7 +16,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <form action="/Vendre/index.html">
+                    <form action="vendre.php">
 
                     <button type="submit" class="btn btn-outline-primary btn-light sell">
                         <div>
