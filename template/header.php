@@ -10,7 +10,7 @@
     <header>
         <nav class="navbar shadow navbar-expand-lg ">
             <div class="container-fluid">
-                <a class="navbar-brand text-white" href="/accueil/index.html">LBC de la M2L</a>
+                <a class="navbar-brand text-white" href="index.php">LBC de la M2L</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -61,7 +61,7 @@
                                 </svg>
 
 
-                                <a class="nav-link text-white" href="/chat box/chat_box.html">Message</a>
+                                <a class="nav-link text-white" href="chat_box.php">Message</a>
 
 
                                 <a class="nav-item log">
