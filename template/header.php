@@ -47,7 +47,7 @@
                                   </svg>
 
 
-                                <a class="nav-link text-white" href="/Recherches/recherches.html">Recherches</a>
+                                <a class="nav-link text-white" href="recherches.php">Recherches</a>
 
 
 
