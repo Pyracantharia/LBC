@@ -13,7 +13,7 @@
                             
 
                             <li class="nav-item mb-2">
-                                <a href="/pages/about.php" class="nav-link p-0 text-muted">
+                                <a href="about.php" class="nav-link p-0 text-muted">
                                     A Propos
                                     
 
