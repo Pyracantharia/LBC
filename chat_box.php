@@ -50,7 +50,7 @@ require 'template/header.php';
 
 </form>
 </div>
-
+<div class="header-separ"></div>
 
 <?php
 require 'template/footer.php';
