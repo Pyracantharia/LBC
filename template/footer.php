@@ -3,7 +3,7 @@
 
 ?>
 
-<div class="container">
+<div class="">
         <footer class="py-5 footer">
             <div class="footer-color bg-body shadow">
                 <div class="row">

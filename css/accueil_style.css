@@ -1,3 +1,5 @@
+/*            Main accueil STYLE          */
+
 .container-sm-modif{
     width: 35%;
 
@@ -35,6 +37,10 @@
 .navbar{
     background-color: #198EF5 ;
 }
+
+
+/*              FOOTER STYLE              */
+
 
 .footer{
     position: absolute;
