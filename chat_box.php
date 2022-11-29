@@ -16,7 +16,7 @@ require 'template/header.php';
     </div>
 
     <div class="utilisateur">
-        <p>Nicolai</p>
+        <p>Name</p>
         <p>Active Now</p>
     </div>
 
