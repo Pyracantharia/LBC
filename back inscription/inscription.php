@@ -76,13 +76,13 @@
 
 
 <?php
-require 'LBC/template/head.php';
+require 'template/head.php';
 ?>
 <link rel="stylesheet" href="/Contact/contact.css">
 
 
 <?php
-require 'LBC/template/header.php';
+require 'template/header.php';
 ?>
             <div class="container">
                 <div id="connexion">
@@ -140,5 +140,5 @@ require 'LBC/template/header.php';
 
             
             <?php
-require 'LBC/template/footer.php';
+require 'template/footer.php';
 ?>
