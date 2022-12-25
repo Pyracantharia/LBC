@@ -73,20 +73,18 @@
             }
         }
         ?>
+        <!DOCTYPE html>
+        <html lang="en">
 
-<?php
-require 'template/footer.php';
-?>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Connexion | Inscription</title>
+            <link rel="stylesheet" href="/Contact/contact.css">
+        </head>
 
-<?php
-require 'template/head.php';
-?>
-<link rel="stylesheet" href="/Contact/contact.css">
-
-
-<?php
-require 'template/header.php';
-?>
+        <body>
             <div class="container">
                 <div id="connexion">
                     <h1 class="title">De Retour !</h1>
@@ -140,8 +138,6 @@ require 'template/header.php';
 
                 </div>
             </div>
+        </body>
 
-            
-            <?php
-require 'template/footer.php';
-?>
+        </html>
