@@ -138,6 +138,8 @@
 
                 </div>
             </div>
-        </body>
 
-        </html>
+            
+            <?php
+require 'template/footer.php';
+?>
