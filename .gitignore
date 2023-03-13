@@ -1,6 +1,6 @@
 # CakePHP 3
 
-/Views/include/*
+/Views/include/connection_bdd.php
 
 /vendor/*
 /config/app.php
