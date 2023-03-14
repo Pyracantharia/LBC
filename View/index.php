@@ -20,7 +20,7 @@ if(isset($_POST["recherche"])){
     <title>Accueil - Great Deal</title>
     <?php include 'include/header.php'; ?>
 </head>
-<body style="background-color: #f2edf3">
+
 <div class="container-scroller">
 
     <?php include 'include/navigation.php'; ?>
