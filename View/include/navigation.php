@@ -96,6 +96,13 @@ if (isset($_POST["search"])) {
 
 
             <?php if (isset($uid)) : ?>
+
+
+
+
+                <a class="btn btn-outline-primary"  href="<?php if (isset($uid)) : ?>nvAnnonces.php <?php else : ?> connexion.php <?php endif; ?>">
+                    <i class="fa-regular fa-square-plus "></i><span class="menu-title "> Nouvelle Annonce</span>
+                </a>
                 <li class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
 
                     <a class="nav-link " id="profileDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
@@ -146,6 +153,8 @@ if (isset($_POST["search"])) {
                                 <p style="font-family: 'Courier New', Courier, monospace" class="fw-bold d-none d-lg-flex note-icon">Messages</p>
                             </i>
                         </a>
+
+
 
                 </li>
 

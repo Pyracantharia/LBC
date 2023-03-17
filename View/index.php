@@ -25,8 +25,8 @@ if(isset($_POST["recherche"])){
 
     <?php include 'include/navigation.php'; ?>
     <!-- partial -->
-    <div class="container-fluid page-body-wrapper">
-        <div class="main-panel">
+  
+        <div class="main-panel header">
             <div class="content-wrapper container">
 
 
@@ -59,11 +59,7 @@ if(isset($_POST["recherche"])){
                                     </div>
                                 </form>
 
-                                <div class="text-center">
-                                    <a class="btn btn-warning" style="background-color: #DFD019" href="<?php if(isset($uid)): ?>nvAnnonces.php <?php else: ?> /jalegreatdeal/View/connexion.php <?php endif; ?>">
-                                        <i class="fa-regular fa-square-plus "></i><span class="menu-title "> Nouvelle Annonce</span>
-                                    </a>
-                                </div>
+                             
 
 
                             </div>
@@ -142,22 +138,7 @@ if(isset($_POST["recherche"])){
                         </div>
                     </div>
 
-                    <div class="grid-margin stretch-card">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2 class="text-center">Présentation de l'équipe</h2>
-
-                                <div class="row portfolio-grid mt-3">
-
-                                    thibault
-
-
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
+                    
 
                 </div>
 
