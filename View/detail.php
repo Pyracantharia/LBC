@@ -113,15 +113,15 @@ if(isset($_POST["send"])){
                                         <h2><?=$titre?><p class="float-end h3"><?= number_format($prix, 0, ',', ' ')  ?> €</p></h2>
                                         <ul class="product-variation">
                                             <?php if ($categorie==1): ?>
-                                                <a class="badge badge-pill badge-primary" href="categorie.php?idcategorie=<?=$categorie?>">Romance<i class="fa-solid fa-heart mx-2"></i></a>
+                                                <a class="badge badge-pill badge-primary" href="categorie.php?idcategorie=<?=$categorie?>">Chaussure<i class="fa-solid fa-heart mx-2"></i></a>
                                             <?php elseif ($categorie==2): ?>
-                                                <a class="badge badge-pill badge-warning">Thriller/Policier<i class="fa-solid fa-user-secret mx-2"></i></a>
+                                                <a class="badge badge-pill badge-warning">Protection<i class="fa-solid fa-user-secret mx-2"></i></a>
                                             <?php elseif ($categorie==3): ?>
-                                                <a class="badge badge-pill badge-info">Science Fiction<i class="fa-solid fa-rocket mx-2"></i></a>
+                                                <a class="badge badge-pill badge-info">Accessoires<i class="fa-solid fa-rocket mx-2"></i></a>
                                             <?php elseif ($categorie==4): ?>
-                                                <a class="badge badge-pill badge-danger">Développement personnel<i class="fa-solid fa-feather-pointed mx-2"></i></a>
+                                                <a class="badge badge-pill badge-danger">Couvre-Chef<i class="fa-solid fa-feather-pointed mx-2"></i></a>
                                             <?php else: ?>
-                                                <a class="badge badge-pill badge-success">Romans étrangers<i class="fa-solid fa-earth-europe mx-2"></i></a>
+                                                <a class="badge badge-pill badge-success">Vetements<i class="fa-solid fa-earth-europe mx-2"></i></a>
                                             <?php endif; ?>
                                             <!-- selon la catégorie, un different badge va s'afficher  -->
 

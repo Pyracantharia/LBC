@@ -1,12 +1,12 @@
 <?php
 include 'include/element.php';
 //$header = "MIME-Version: 1.0\r\n";
-//$header .= 'From: "Nom"<test@jalegreatdeal.fr>' . "\n";
+//$header .= 'From: "Nom"<test@lbc.fr>' . "\n";
 //$header .= 'Content-Type: text/html; charset="utf-8"' . "\n";
 //$header .= 'Content-Trasnfer-Encoding: 8bit';
 
 //$message = "Salut";
-//$mail = "admin@jalegreatdeal.fr";
+//$mail = "admin@lbc.fr";
 //mail($mail, "Sujet", $message, $header);
 
 if(isset($_POST["recherche"])){
@@ -107,7 +107,7 @@ if(isset($_POST["recherche"])){
                                                 </div>
 
                                                 <div class="product-img-outer text-center">
-                                                    <img class="product_image rounded" style="height: 300px; width: 300px" src="../<?= $tableau["photo"] ?>" alt="prduct image">
+                                                    <img class="product_image rounded" style="height: 300px; width: 300px" src="../<?= $tableau["photo"] ?>" alt="product image">
                                                 </div>
                                                 <p class="product-title"><?= $tableau["titre"] ?></p>
                                                 <p class="product-price"><?= number_format($tableau["prix"], 0, ',', ' ')  ?> €</p>
@@ -120,15 +120,15 @@ if(isset($_POST["recherche"])){
                                                 </p>
                                                 <ul class="product-variation">
                                                         <?php if ($tableau["categorie"]==1): ?>
-                                                        <span class="badge badge-primary">Romance <i class="fa-solid fa-heart mx-2"></i></span>
+                                                        <span class="badge badge-primary">Chaussure <i class="fa-solid fa-heart mx-2"></i></span>
                                                         <?php elseif ($tableau["categorie"]==2): ?>
-                                                        <span class="badge badge-warning">Thriller/Policier <i class="fa-solid fa-user-secret mx-2"></i></span>
+                                                        <span class="badge badge-warning">Protection <i class="fa-solid fa-user-secret mx-2"></i></span>
                                                         <?php elseif ($tableau["categorie"]==3): ?>
-                                                        <span class="badge badge-info">Science Fiction <i class="fa-solid fa-rocket mx-2"></i></span>
+                                                        <span class="badge badge-info">Accessoires <i class="fa-solid fa-rocket mx-2"></i></span>
                                                         <?php elseif ($tableau["categorie"]==4): ?>
-                                                        <span class="badge badge-danger">Développement personnel <i class="fa-solid fa-feather-pointed mx-2"></i></span>
+                                                        <span class="badge badge-danger">Couvre-Chef<i class="fa-solid fa-feather-pointed mx-2"></i></span>
                                                         <?php else: ?>
-                                                        <span class="badge badge-success">Romans étrangers <i class="fa-solid fa-earth-europe mx-2"></i></span>
+                                                        <span class="badge badge-success">Vetements <i class="fa-solid fa-earth-europe mx-2"></i></span>
                                                         <?php endif; ?>
                                                 </ul>
                                                 <a href="detail.php?ida=<?= $tableau["ida"] ?>" class="btn btn-inverse-warning">Voir</a>

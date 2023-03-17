@@ -1,10 +1,2 @@
-<script src="../asset/template/assets/vendors/js/vendor.bundle.base.js"></script>
-<script src="../asset/template/assets/vendors/chart.js/Chart.min.js"></script>
-<script src="../asset/template/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-<script src="../asset/template/assets/js/off-canvas.js"></script>
-<script src="../asset/template/assets/js/hoverable-collapse.js"></script>
-<script src="../asset/template/assets/js/misc.js"></script>
-<script src="../asset/template/assets/js/settings.js"></script>
-<script src="../asset/template/assets/js/todolist.js"></script>
-<script src="../asset/template/assets/js/jquery.cookie.js"></script>
-<script src="../asset/template/assets/js/dashboard.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>

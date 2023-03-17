@@ -1,36 +1,36 @@
 <?php
 if(isset($_GET["idcategorie"])){
     if($_GET["idcategorie"] == 1){
-        $romance = "active";
+        $chaussure = "active";
     }else{
-        $romance = null;
+        $chaussure = null;
     }
     if($_GET["idcategorie"] == 2){
-        $policier = "active";
+        $protection = "active";
     }else{
-        $policier = null;
+        $protection = null;
     }
     if($_GET["idcategorie"] == 3){
-        $sciencefiction = "active";
+        $accessoires = "active";
     }else{
-        $sciencefiction = null;
+        $accessoires = null;
     }
     if($_GET["idcategorie"] == 4){
-        $developpementpersonnel = "active";
+        $couvre = "active";
     }else{
-        $developpementpersonnel = null;
+        $couvre = null;
     }
     if($_GET["idcategorie"] == 5){
-        $romanetranger = "active";
+        $vetements = "active";
     }else{
-        $romanetranger = null;
+        $vetements = null;
     }
 }else{
-    $romance = null;
-    $policier = null;
-    $sciencefiction = null;
-    $developpementpersonnel = null;
-    $romanetranger = null;
+    $chaussure = null;
+    $protection = null;
+    $accessoires = null;
+    $couvre = null;
+    $vetements = null;
 }
 if(isset($_POST["search"])){
     $search = $_POST["search"];
@@ -44,13 +44,12 @@ if(isset($_POST["search"])){
 
 ?>
 
-<div class="horizontal-menu">
+<div >
     <nav class="navbar top-navbar col-lg-12 col-12 p-0">
         <div class="container">
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                <a class="navbar-brand brand-logo" href="index.php"><img style="height: 60px; width: 110px" src="../image/jalegreatedealnav.png" alt="logo" /></a>
-                <a class="navbar-brand brand-logo-mini" href="index.php"><img style="height: 60px; width: 120px" src="../image/jalegreatedealnavmini.png" alt="logo" /></a>
-                <!-- Logo jale great deal responsive -->
+                <a class="navbar-brand brand-logo-mini" href="index.php"><img style="height: 60px; width: 120px" src="../image/lbc.ico" alt="logo" /></a>
+                <!-- Logo  great deal responsive -->
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
                 <ul class="navbar-nav mr-lg-2">
@@ -143,34 +142,34 @@ if(isset($_POST["search"])){
     <nav class="bottom-navbar" style="background-color: #DFD019">
         <div class="container">
             <ul class="nav page-navigation">
-                <li class="nav-item <?= $romance ?>">
+                <li class="nav-item <?= $chaussure ?>">
                     <a class="nav-link" href="categorie.php?idcategorie=1">
                         <i class="fa-solid fa-heart mx-2"></i>
-                        <span class="menu-title">Romance</span>
+                        <span class="menu-title">Chaussure</span>
                     </a>
                 </li>
-                <li class="nav-item <?= $policier ?>">
+                <li class="nav-item <?= $protection ?>">
                     <a class="nav-link" href="categorie.php?idcategorie=2">
                         <i class="fa-solid fa-user-secret mx-2"></i>
-                        <span class="menu-title">Thriller/Policier</span>
+                        <span class="menu-title">Protection</span>
                     </a>
                 </li>
-                <li class="nav-item <?= $sciencefiction ?>">
+                <li class="nav-item <?= $accessoires ?>">
                     <a class="nav-link" href="categorie.php?idcategorie=3">
                         <i class="fa-solid fa-rocket mx-2"></i>
-                        <span class="menu-title">Science Fiction</span>
+                        <span class="menu-title">Accessoires</span>
                     </a>
                 </li>
-                <li class="nav-item <?= $developpementpersonnel ?>">
+                <li class="nav-item <?= $couvre ?>">
                     <a class="nav-link" href="categorie.php?idcategorie=4">
                         <i class="fa-solid fa-feather-pointed mx-2"></i>
-                        <span class="menu-title">Développement personnel</span>
+                        <span class="menu-title">Couvre-Chef</span>
                     </a>
                 </li>
-                <li class="nav-item <?= $romanetranger ?>">
+                <li class="nav-item <?= $vetements ?>">
                     <a class="nav-link" href="categorie.php?idcategorie=5">
                         <i class="fa-solid fa-earth-europe mx-2"></i>
-                        <span class="menu-title">Romans étrangers</span>
+                        <span class="menu-title">Vetements</span>
                     </a>
                 </li>
             </ul>

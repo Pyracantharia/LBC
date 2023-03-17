@@ -1,6 +1,6 @@
 <?php 
 //idcategorie
-//1 romance/ 2 triller/ 3 science fiction/ 4 developpement personnel/ 5 romans étranger
+//
 
 include 'include/element.php'; 
 include 'include/navigation.php'; //bar de navigation présent sur toute les pages
@@ -88,7 +88,7 @@ $result2 = $statement2->fetchAll(PDO::FETCH_ASSOC);
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>JALE - Great Deal</title>
+    <title>LBC - M2L</title>
     <?php include 'include/header.php'; ?>
 </head>
 <body style="background-color: #f2edf3">

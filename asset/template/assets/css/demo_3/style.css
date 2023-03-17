@@ -12104,7 +12104,7 @@ code {
 
 /* Footer */
 .footer {
-  background: #f2edf3;
+  background: ;
   color: color(dark);
   border-top: 1px solid #e7dee9;
   padding: 30px 1rem;
@@ -18841,7 +18841,7 @@ div.tagsinput {
 /* === Landing screens === */
 /* Auth */
 .auth .login-half-bg {
-  background: url("../../images/auth/login-bg.jpg");
+  
   background-size: cover; }
 
 .auth .register-half-bg {
@@ -19128,7 +19128,7 @@ div.tagsinput {
 
 footer {
   padding: 85px 0 30px 0;
-  background-color: #b66dff; }
+ }
   footer img {
     width: 170px; }
   footer .social-icons {
@@ -20574,7 +20574,7 @@ footer {
   padding: 2rem 0.937rem; }
 
 .container-scroller .page-body-wrapper {
-  background: #f2edf3;
+  background: blue;
   padding-left: 0;
   padding-right: 0; }
 

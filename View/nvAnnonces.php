@@ -141,7 +141,7 @@ if(isset($_POST["btn"])){ // si le bouton ets cliqué, les informations écrites
                                     </div>
                                     <div class="mb-4">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked/>
-                                        <label class="form-check-label" for="flexCheckChecked">J'accepte les conditions général d'utilisateur, les règles de diffusion du site Jale Great Deal et j'autorise Jale Great Deal a diffuser mon annonce.
+                                        <label class="form-check-label" for="flexCheckChecked">J'accepte les conditions général d'utilisateur, les règles de diffusion du site LBC et j'autorise LBC  a diffuser mon annonce.
                                         </label>
                                     </div>
                                     <input style='background-color: #FFE713' class="btn px-5" name="btn" type="submit" value="Enregistrer">
