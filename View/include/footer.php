@@ -1,7 +1,19 @@
-<footer >
-    <div >
+<footer style="display: flex;
+    justify-content: space-around;">
+
+
+
+
+
+
+
+
+
+
+
+    <div>
         <div>
-            <span> Copyright © 2023 Thibault  <br>
+            <span> Copyright © 2023 Thibault <br>
                 Ceci est un projet qui a été réalisé dans le cadre d'un projet scolaire
             </span>
         </div>
