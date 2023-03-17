@@ -21,12 +21,14 @@ if(isset($_POST["recherche"])){
     <?php include 'include/header.php'; ?>
 </head>
 
+
+<body class="header">
 <div class="container-scroller">
 
     <?php include 'include/navigation.php'; ?>
     <!-- partial -->
   
-        <div class="main-panel header">
+        <div class="main-panel ">
             <div class="content-wrapper container">
 
 
@@ -53,7 +55,7 @@ if(isset($_POST["recherche"])){
                                             </div>
                                             <input type="text" class="form-control" placeholder="Entrer le titre de l'annonce" name="recherchetext" aria-label="Text input with dropdown button">
                                             <div class="input-group-append">
-                                                <input type="submit" class="btn btn-warning" name="recherche" value="Rechercher">
+                                                <input type="submit" class="btn btn-secondary" name="recherche" value="Rechercher">
                                             </div>
                                         </div>
                                     </div>
