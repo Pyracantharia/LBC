@@ -60,31 +60,32 @@ if (isset($_POST["search"])) {
 
                 <li class="nav-item<?= $chaussure ?>">
                     <a class="nav-link" href="categorie.php?idcategorie=1">
-                        <i class="fa-solid fa-heart mx-2"></i>
+                        <i class="fa-solid fa-shoe-prints"></i>
                         <span class="menu-title">Chaussure</span>
                     </a>
                 </li>
                 <li class="nav-item <?= $protection ?>">
                     <a class="nav-link" href="categorie.php?idcategorie=2">
-                        <i class="fa-solid fa-user-secret mx-2"></i>
+                        <i class="fa-solid fa-shield"></i>
                         <span class="menu-title">Protection</span>
+
                     </a>
                 </li>
                 <li class="nav-item <?= $accessoires ?>">
                     <a class="nav-link" href="categorie.php?idcategorie=3">
-                        <i class="fa-solid fa-rocket mx-2"></i>
+                    <i class="fa-regular fa-futbol"></i>
                         <span class="menu-title">Accessoires</span>
                     </a>
                 </li>
                 <li class="nav-item <?= $couvre ?>">
                     <a class="nav-link" href="categorie.php?idcategorie=4">
-                        <i class="fa-solid fa-feather-pointed mx-2"></i>
+                        <i class="fa-solid fa-hat-cowboy"></i>
                         <span class="menu-title">Couvre-Chef</span>
                     </a>
                 </li>
                 <li class="nav-item <?= $vetements ?>">
                     <a class="nav-link" href="categorie.php?idcategorie=5">
-                        <i class="fa-solid fa-earth-europe mx-2"></i>
+                        <i class="fa-solid fa-shirt"></i>
                         <span class="menu-title">Vetements</span>
                     </a>
                 </li>
@@ -100,7 +101,7 @@ if (isset($_POST["search"])) {
 
 
 
-                <a class="btn btn-outline-primary"  href="<?php if (isset($uid)) : ?>nvAnnonces.php <?php else : ?> connexion.php <?php endif; ?>">
+                <a class="btn btn-outline-primary" href="<?php if (isset($uid)) : ?>nvAnnonces.php <?php else : ?> connexion.php <?php endif; ?>">
                     <i class="fa-regular fa-square-plus "></i><span class="menu-title "> Nouvelle Annonce</span>
                 </a>
                 <li class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -180,6 +181,10 @@ if (isset($_POST["search"])) {
 
 
                 <li class="nav-item nav-logout ">
+
+
+
+
 
                 </li>
 

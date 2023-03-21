@@ -4,3 +4,5 @@
 <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
 <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script><script  src="/asset/template/assets/js/script.js"></script>
 <script src="https://kit.fontawesome.com/13086b36a6.js" crossorigin="anonymous"></script>
+<script  src="/asset/template/assets/js/script.js"></script>
+

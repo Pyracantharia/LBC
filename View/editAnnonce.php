@@ -37,13 +37,13 @@ if(isset($_POST["edit"])){
     $detail = $_POST["detail"];
     $prix = $_POST["prix"];
     $livraison = $_POST["livraison"];
-    $poche = $_POST["poche"];
+    $sexe = $_POST["sexe"];
     echo $categorie = $_POST["categorie"];
-    echo $edition = $_POST["edition"];
+    echo $marque = $_POST["marque"];
     $etat = $_POST["etat"];
-    $poche = $_POST["poche"];
-    $req = $pdo->prepare('UPDATE annonce SET titre = ?, detail = ?, prix = ?, livraison = ?, poche = ?, categorie = ?, edition = ?, etat = ? WHERE ida = ?');
-    $req->execute([$titre, $detail, $prix, $livraison, $poche, $categorie, $edition, $etat, $ida]);
+    $sexe = $_POST["sexe"];
+    $req = $pdo->prepare('UPDATE annonce SET titre = ?, detail = ?, prix = ?, livraison = ?, sexe = ?, categorie = ?, marque = ?, etat = ? WHERE ida = ?');
+    $req->execute([$titre, $detail, $prix, $livraison, $sexe, $categorie, $marque, $etat, $ida]);
     header('Location: editAnnonce.php?ida='.$ida);
 }
 // recuperation des informations de l'annonce selon l'ida
@@ -119,24 +119,24 @@ if(isset($_POST["edit"])){
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label for="titre" class="form-label">Edition</label>
-                                        <select class="form-control" name="edition">
-                                            <?php foreach ($pdo->query('SELECT * FROM edition') as $row) {
-                                                if ($row['ide'] == $annonce['edition']) {
-                                                    echo '<option value="' . $row['ide'] . '" selected>' . $row['nomEdition'] . '</option>';
+                                        <label for="titre" class="form-label">marque</label>
+                                        <select class="form-control" name="marque">
+                                            <?php foreach ($pdo->query('SELECT * FROM marque') as $row) {
+                                                if ($row['ide'] == $annonce['marque']) {
+                                                    echo '<option value="' . $row['ide'] . '" selected>' . $row['nomMarque'] . '</option>';
                                                 } else {
-                                                    echo '<option value="' . $row['ide'] . '">' . $row['nomEdition'] . '</option>';
+                                                    echo '<option value="' . $row['ide'] . '">' . $row['nomMarque'] . '</option>';
                                                 }
                                             }
-                                            // possibilité de changer l'edition
+                                            // possibilité de changer l'marque
                                             ?>
                                         </select>
                                     </div>
                                 
                                     <div class="form-group">
-                                        <label for="titre" class="form-label">Poche</label>
-                                        <select class="form-control" name="poche">
-                                            <?php if ($annonce['poche'] == 1) {
+                                        <label for="titre" class="form-label">sexe</label>
+                                        <select class="form-control" name="sexe">
+                                            <?php if ($annonce['sexe'] == 1) {
                                                 echo '<option value="1" selected>Oui</option>';
                                                 echo '<option value="0">Non</option>';
                                             } else {

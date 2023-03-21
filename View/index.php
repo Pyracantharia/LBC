@@ -37,7 +37,7 @@ if(isset($_POST["recherche"])){
                     <div class="grid-margin stretch-card">
                         <div class="card">
                             <div class="card-body">
-                                <h2 class="text-center">Recherche</h2>
+                                <h2 class="text-center text-black">Recherche</h2>
 
                                 <form method="post" action="">
                                     <div class="form-group">
@@ -71,7 +71,7 @@ if(isset($_POST["recherche"])){
                     <div class="grid-margin stretch-card">
                         <div class="card">
                             <div class="card-body">
-                                <h2 class="text-center">Les 20 annonces les plus vues </h2>
+                                <h2 class="text-center text-black">Les 20 annonces les plus vues </h2>
                                 <div class="row product-item-wrapper mt-4">
 
                                     <?php foreach ($pdo->query("SELECT * from annonce order by vue desc LIMIT 20") as $tableau): ?>
@@ -111,22 +111,22 @@ if(isset($_POST["recherche"])){
                                                 <p class="product-price"><?= number_format($tableau["prix"], 0, ',', ' ')  ?> €</p>
                                                 <p class="product-actual-price">
                                                     <?php if ($tableau["livraison"]==1): ?>
-                                                    <span class="badge badge-pill badge-success">Livraison <i class="fa-solid fa-truck"></i></span>
+                                                    <span class="badge badge-pill badge-success text-primary">Livraison <i class="fa-solid fa-truck"></i></span>
                                                     <?php else: ?>
-                                                    <span class="badge badge-pill badge-danger">Main propre <i class="fa-solid fa-handshake"></i></span>
+                                                    <span class="badge badge-pill badge-danger text-primary">Main propre <i class="fa-solid fa-handshake"></i></span>
                                                     <?php endif; ?>
                                                 </p>
                                                 <ul class="product-variation">
                                                         <?php if ($tableau["categorie"]==1): ?>
-                                                        <span class="badge badge-primary">Chaussure <i class="fa-solid fa-heart mx-2"></i></span>
+                                                        <span class="badge badge-primary text-primary">Chaussure <i class="fa-solid fa-shoe-prints"></i></span>
                                                         <?php elseif ($tableau["categorie"]==2): ?>
-                                                        <span class="badge badge-warning">Protection <i class="fa-solid fa-user-secret mx-2"></i></span>
+                                                        <span class="badge badge-warning text-primary">Protection <i class="fa-solid fa-shield"></i></span>
                                                         <?php elseif ($tableau["categorie"]==3): ?>
-                                                        <span class="badge badge-info">Accessoires <i class="fa-solid fa-rocket mx-2"></i></span>
+                                                        <span class="badge badge-info text-primary">Accessoires <i class="fa-regular fa-futbol"></i></span>
                                                         <?php elseif ($tableau["categorie"]==4): ?>
-                                                        <span class="badge badge-danger">Couvre-Chef<i class="fa-solid fa-feather-pointed mx-2"></i></span>
+                                                        <span class="badge badge-danger text-primary">Couvre-Chef<i class="fa-solid fa-hat-cowboy"></i></span>
                                                         <?php else: ?>
-                                                        <span class="badge badge-success">Vetements <i class="fa-solid fa-earth-europe mx-2"></i></span>
+                                                        <span class="badge badge-success text-primary">Vetements <i class="fa-solid fa-shirt"></i></span>
                                                         <?php endif; ?>
                                                 </ul>
                                                 <a href="detail.php?ida=<?= $tableau["ida"] ?>" class="btn btn-inverse-warning">Voir</a>
@@ -152,6 +152,12 @@ if(isset($_POST["recherche"])){
         </div>
     </div>
 </div>
+
+
+
+
+
+
 
 <?php include 'include/script.php'; ?>
 

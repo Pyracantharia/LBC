@@ -24,7 +24,7 @@
                                 <h1>Mes annonces</h1>
                                 <table class="table table-striped">
                                     <tr>
-                                        <th>Photo</th><th>Titre</th><th>Catégorie</th><th>Edition</th><th>Poche</th><th>Livraison</th><th>Date</th><th>Vues</th><th>Prix</th><th>Supprimer</th>
+                                        <th>Photo</th><th>Titre</th><th>Catégorie</th><th>marque</th><th>Sexe</th><th>Livraison</th><th>Date</th><th>Vues</th><th>Prix</th><th>Supprimer</th>
                                     </tr>
                                     <?php
 
@@ -34,19 +34,19 @@
                                     foreach($result as $row){
                                         $req2=$pdo->query("select * from categorie where idc=".$row['categorie']);
                                         $ligne2=$req2->fetch();
-                                        $req3=$pdo->query("select * from edition where ide=".$row['edition']);
+                                        $req3=$pdo->query("select * from marque where ide=".$row['marque']);
                                         $ligne3=$req3->fetch();
 
                                         ?><tr>
                                         <td class='align-middle'><img src='../<?= $row["photo"]?>' width='60'></td>
                                         <td class='align-middle'><?= $row["titre"] ?></td>
                                         <td class='align-middle'><?= $ligne2["nomCat"] ?></td>
-                                        <td class='align-middle'><?= $ligne3["nomEdition"] ?></td>
+                                        <td class='align-middle'><?= $ligne3["nomMarque"] ?></td>
                                         <?php
-                                        if ($row["poche"]==1){
-                                            echo "<td class='align-middle'><i class='fas fa-check'></i></td>";
+                                        if ($row["sexe"]==1){
+                                            echo "<td class='align-middle'>Homme<i class=''></i></td>";
                                         }else{
-                                            echo "<td class='align-middle'><i class='fas fa-times'></i></td>";
+                                            echo "<td class='align-middle'>Femme<i class=''></i></td>";
                                         }
                                         if ($row["livraison"]==1){
                                             echo "<td class='align-middle'><i class='fas fa-check'></i></td>";

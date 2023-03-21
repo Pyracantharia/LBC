@@ -53,21 +53,30 @@ if(isset($_GET["filtre"])){
     }
     // dans cette requete on selectionne si il n'y a pas de livraison et donc en main propre
 
-    if($filtre=="poche"){
-        $statement2 = $pdo -> prepare('SELECT * from annonce where categorie = :idcategorie and poche = 1');
+    if($filtre=="homme"){
+        $statement2 = $pdo -> prepare('SELECT * from annonce where categorie = :idcategorie and sexe = 1');
         $statement2 -> bindValue(':idcategorie', $idcategorie, PDO::PARAM_INT);
         $statement2 -> execute();
         $result2 = $statement2->fetchAll(PDO::FETCH_ASSOC);
 
     }
-    // dans cette requete on selectionne si c'est un format poche ou pas
+    // dans cette requete on selectionne si c'est un format homme ou pas
+    if($filtre=="femme"){
+        $statement2 = $pdo -> prepare('SELECT * from annonce where categorie = :idcategorie and sexe = 0');
+        $statement2 -> bindValue(':idcategorie', $idcategorie, PDO::PARAM_INT);
+        $statement2 -> execute();
+        $result2 = $statement2->fetchAll(PDO::FETCH_ASSOC);
+    
+    }
+
+    // dans cette requete on selectionne si c'est un format femme ou pas
 
 }elseif(isset($_GET["recherche"])){
     $recherche=$_GET["recherche"];
     // on recupere la recherche dans le lien par la méthode get, si dans le lien on retrouve une recherche, on demande une requete en PDO
     // il selectionne dans la base de donnée puis avec $result2 il affiche.
 
-    $statement2 = $pdo -> prepare('SELECT * from annonce where categorie = :idcategorie and titre like :recherche');
+    $statement2 = $pdo -> prepare('SELECT * from annonce where categorie = :idcategorie Pyracand titre like :recherche');
     $statement2 -> bindValue(':idcategorie', $idcategorie, PDO::PARAM_INT);
     $statement2 -> bindValue(':recherche', '%'.$recherche.'%', PDO::PARAM_STR);
     $statement2 -> execute();
@@ -91,7 +100,7 @@ $result2 = $statement2->fetchAll(PDO::FETCH_ASSOC);
     <title>LBC - M2L</title>
     <?php include 'include/header.php'; ?>
 </head>
-<body style="background-color: #f2edf3">
+<body class="header">
 <div class="container-scroller">
     <div class="container-fluid page-body-wrapper">
         <div class="main-panel">
@@ -105,7 +114,9 @@ $result2 = $statement2->fetchAll(PDO::FETCH_ASSOC);
                                 <a  class="btn btn-gradient-warning" href="categorie.php?idcategorie=<?=$result["idc"]?>&filtre=decroissant">Décroissant</a>
                                 <a  class="btn btn-gradient-warning" href="categorie.php?idcategorie=<?=$result["idc"]?>&filtre=livraison">Livraison</a>
                                 <a  class="btn btn-gradient-warning" href="categorie.php?idcategorie=<?=$result["idc"]?>&filtre=mainPropre">Main propre</a>
-                                <a  class="btn btn-gradient-warning" href="categorie.php?idcategorie=<?=$result["idc"]?>&filtre=poche">Poche</a>
+                                <a  class="btn btn-gradient-warning" href="categorie.php?idcategorie=<?=$result["idc"]?>&filtre=homme">Homme</a>
+                                <a class="btn btn-gradient-warning" href="categorie.php?idcategorie=<?=$result["idc"]?>&filtre=femme">Femme</a>
+
                             </div>
                             <!-- un bouton est un lien amenant à la méthode get. 
                             Lorsque l'on clique sur le bouton voulu, on rentre dans le if et appliquons la requête -->
@@ -118,7 +129,7 @@ $result2 = $statement2->fetchAll(PDO::FETCH_ASSOC);
                             <!-- pour chaque resultat selon la requete on rentre dans la boucle foreach puis on affiche pour chaque annonce :
                             sa photo, son etat, son format, sa livraison puis un bouton pour acceder au detail du produit -->
                                 <?php foreach($result2 as $ligne){ ?>
-                                <div class= 'p-5 text-center' style='background-color:#F3F781'>
+                                <div class= 'p-5 text-center text-black' style='background-color:#F3F781'>
                                     <div class='card'>
                                         <div class='row'>
 
@@ -133,18 +144,18 @@ $result2 = $statement2->fetchAll(PDO::FETCH_ASSOC);
                                                 number_format est une fonction qui te permet de mettre des espaces pour que le chiffre soit plus visible -->
                                             <ul class="product-variation">                                                
                                                                                              
-                                                 <span class="badge badge-pill badge-info"><?=$ligne['etat']?> &nbsp<i class="fa-solid fa-thumbs-up"></i></span>
-                                                <?php if ($ligne["poche"]==1): ?>
-                                                <span class="badge badge-pill badge-danger">Format poche &nbsp<i class="fa-solid fa-pen-nib"></i></span>
+                                                 <span class="badge badge-pill badge-info text-black"><?=$ligne['etat']?> &nbsp<i class="fa-solid fa-thumbs-up"></i></span>
+                                                <?php if ($ligne["sexe"]==1): ?>
+                                                <span class="badge badge-pill badge-danger text-black">Format Homme &nbsp<i class="fa-solid fa-pen-nib"></i></span>
                                                 <?php else: ?>
-                                                <span class="badge badge-pill badge-danger">Format standard &nbsp<i class="fa-solid fa-pen-nib"></i></span>
+                                                <span class="badge badge-pill badge-danger text-black">Format Femme &nbsp<i class="fa-solid fa-pen-nib"></i></span>
                                                 <?php endif; ?>
-                                                <!-- selon si c'est un format poche ou standard, un different bagde est mis -->
+                                                <!-- selon si c'est un format sexe ou standard, un different bagde est mis -->
 
                                                 <?php if ($ligne["livraison"]==1): ?>
-                                                <span class="badge badge-pill badge-success">Livraison &nbsp<i class="fa-solid fa-truck"></i></span>
+                                                <span class="badge badge-pill badge-success text-black">Livraison &nbsp<i class="fa-solid fa-truck"></i></span>
                                                 <?php else: ?>
-                                                <span class="badge badge-pill badge-sucess">Main propre &nbsp<i class="fa-solid fa-handshake"></i></span>
+                                                <span class="badge badge-pill badge-sucess text-black">Main propre &nbsp<i class="fa-solid fa-handshake"></i></span>
                                                 <?php endif; ?>
                                                 <!-- selon si c'est une livraison ou en main propre, un different bagde est mis -->
                                                 </ul>
