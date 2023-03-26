@@ -98,7 +98,7 @@ $result2 = $statement2->fetchAll(PDO::FETCH_ASSOC);
 <html lang="fr">
 <head>
     <title>LBC - M2L</title>
-    <?php include 'include/header.php'; ?>
+    <?php include 'include/head.php'; ?>
 </head>
 <body class="header">
 <div class="container-scroller">

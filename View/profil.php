@@ -110,7 +110,7 @@ if(isset($_POST["bout_mdp"])) // si le bouton est cliqué, les informations sais
 <html lang="fr">
 <head>
     <title>Profil - Great Deal</title>
-    <?php include 'include/header.php'; ?>  <!-- header présent sur toutes les pages (connexion avec bootstrap) -->
+    <?php include 'include/head.php'; ?>  <!-- header présent sur toutes les pages (connexion avec bootstrap) -->
 </head>
 <body style="background-color: #f2edf3">
 <div class="container-scroller">

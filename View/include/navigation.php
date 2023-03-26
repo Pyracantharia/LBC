@@ -46,11 +46,7 @@ if (isset($_POST["search"])) {
 <header class="p-3 ">
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start rounded bg-light">
-            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
-            </a>
+
 
             <a class="navbar-brand brand-logo-mini" href="index.php"><img class="rounded" style="width : 100px " src="../image/lbc.ico" alt="logo" /></a>
 
@@ -73,7 +69,7 @@ if (isset($_POST["search"])) {
                 </li>
                 <li class="nav-item <?= $accessoires ?>">
                     <a class="nav-link" href="categorie.php?idcategorie=3">
-                    <i class="fa-regular fa-futbol"></i>
+                        <i class="fa-regular fa-futbol"></i>
                         <span class="menu-title">Accessoires</span>
                     </a>
                 </li>
@@ -123,20 +119,15 @@ if (isset($_POST["search"])) {
                             <i class="fa-solid fa-user"></i> Profil</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="deconnexion.php">
-                            <i class="fa-solid fa-right-from-bracket"></i> Déconnexion </a>
-
-
-                        <a class="nav-link text-center text-dark mt-lg-4" href="<?php if (isset($uid)) : ?>mesAnnonces.php <?php else : ?>connexion.php <?php endif; ?>">
-                            <i class="fa-solid fa-list">
-                                <p style="font-family: 'Courier New', Courier, monospace" class="d-lg-flex d-none note-icon">Mes annonces</p>
-                            </i>
+                            <i class="fa-solid fa-sign-out">Déconnexion</i>
                         </a>
 
+                        <a class="dropdown-item" href="<?php if (isset($uid)) : ?>mesAnnonces.php <?php else : ?>connexion.php <?php endif; ?>">
+                            <i class="fa-solid fa-list">Mes annonces</i>
+                        </a>
 
-                        <a class="nav-link text-center text-dark mt-lg-4 count-indicator" href="<?php if (isset($uid)) : ?>favoris.php <?php else : ?>connexion.php <?php endif; ?>">
-                            <i class="fa-regular fa-heart fa-4x">
-                                <p style="font-family: 'Courier New', Courier, monospace" class="fw-bold d-none d-lg-flex note-icon">Favoris</p>
-                            </i>
+                        <a class="dropdown-item" href="<?php if (isset($uid)) : ?>favoris.php <?php else : ?>connexion.php <?php endif; ?>">
+                            <i class="fa-solid fa-heart">Favoris</i>
                             <?php
                             if (isset($uid)) {
                                 $reqNav = $pdo->prepare("SELECT * FROM favoris WHERE idu = ?");
@@ -148,10 +139,9 @@ if (isset($_POST["search"])) {
                             } ?>
                         </a>
 
-
-                        <a class="nav-link text-center text-dark mt-lg-4" href="<?php if (isset($uid)) : ?>message.php <?php else : ?> connexion.php <?php endif; ?>">
-                            <i class="fa-regular fa-comments">
-                                <p style="font-family: 'Courier New', Courier, monospace" class="fw-bold d-none d-lg-flex note-icon">Messages</p>
+                        <a class="dropdown-item" href="<?php if (isset($uid)) : ?>message.php <?php else : ?> connexion.php <?php endif; ?>">
+                            <i class="fa-regular fa-comments note-icon">
+                                Messages
                             </i>
                         </a>
 

@@ -3,7 +3,7 @@
 <html lang="fr">
 <head>
     <title>Mes annonces - Great Deal</title>
-    <?php include 'include/header.php'; ?>  <!-- header présent sur toutes les pages (connexion avec bootstrap) -->
+    <?php include 'include/head.php'; ?>  <!-- header présent sur toutes les pages (connexion avec bootstrap) -->
 </head>
 <body style="background-color: #f2edf3">
 <div class="container-scroller">

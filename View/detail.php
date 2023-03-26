@@ -53,7 +53,7 @@ if (isset($_POST["send"])) {
 
 <head>
     <title>Detail annonce - Great Deal</title>
-    <?php include 'include/header.php'; ?> <!-- header présent sur toutes les pages (connexion avec bootstrap) -->
+    <?php include 'include/head.php'; ?> <!-- header présent sur toutes les pages (connexion avec bootstrap) -->
 </head>
 
 <body style="background-color: #f2edf3">
@@ -136,9 +136,9 @@ if (isset($_POST["send"])) {
                                                 <!-- les informations récuperer son afficher dans un badge -->
 
                                                 <?php if ($sexe == 1) : ?>
-                                                    <span class="badge badge-pill text-black">Format sexe &nbsp<i class="fa-solid fa-pen-nib"></i></span>
+                                                    <span class="badge badge-pill text-black">Format Homme &nbsp<i class="fa-solid fa-pen-nib"></i></span>
                                                 <?php else : ?>
-                                                    <span class="badge badge-pill text-black">Format standard &nbsp<i class="fa-solid fa-pen-nib"></i></span>
+                                                    <span class="badge badge-pill text-black">Format Femme &nbsp<i class="fa-solid fa-pen-nib"></i></span>
                                                 <?php endif; ?>
                                                 <!--  si l'annonce est en format sexe alors affichage d'un badge sinon different badge  -->
 

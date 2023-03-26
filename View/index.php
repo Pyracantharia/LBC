@@ -18,11 +18,12 @@ if(isset($_POST["recherche"])){
 <html lang="fr">
 <head>
     <title>Accueil - Great Deal</title>
-    <?php include 'include/header.php'; ?>
+    <?php include 'include/head.php'; ?>
 </head>
 
 
 <body class="header">
+    
 <div class="container-scroller">
 
     <?php include 'include/navigation.php'; ?>

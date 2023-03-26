@@ -73,23 +73,25 @@ if(isset($_POST["bout_mess"]))
 <html lang="fr">
 <head>
     <title>Message - Great Deal</title>
-    <?php include 'include/header.php'; ?>  <!-- header présent sur toutes les pages (connexion avec bootstrap) -->
-    <link rel="stylesheet" href="../asset/template/assets/css/demo_3/style-conv.css">
+    <?php include 'include/head.php'; ?>  <!-- header présent sur toutes les pages (connexion avec bootstrap) -->
 </head>
-<body style="background-color: #f2edf3">
-<div class="wrapper">
+<body>
+<div class="container-scroller">
 
     <?php include 'include/navigation.php'; ?> <!-- bar de navigation présent sur toute les pages-->
     <!-- partial -->
-    <div class="container">
-                <div class="left">
+    <div class="container-fluid page-body-wrapper">
+        <div class="main-panel">
+            <div class="content-wrapper container">
 
+
+                <div class="row">
                     <div class="col-md-12">
                         <button type="button" class="btn btn-secondary py-3 mb-4 text-center d-md-none aside-toggler"><i class="mdi mdi-menu mr-0 icon-md"></i></button>
                         <div class="card chat-app-wrapper">
                             <div class="row mx-0">
                                 <div class="col-lg-3 col-md-4 chat-list-wrapper px-0">
-                                    <div class="left>
+                                    <div class="chat-list-item-wrapper">
                                         <?php
                                         foreach($listConv as $conv){
                                             $req3 = $pdo->prepare('SELECT * FROM message where idc = :idc order by time desc limit 1');
@@ -113,10 +115,10 @@ if(isset($_POST["bout_mess"]))
                                             // on recupere les informations de l'user 
 
                                             ?>
-                                            <a  style="outline: none; text-decoration: none;"  href="message.php?idc=<?=$conv["idc"]?>"> <!--  cliquer sur la conevrsation? -->
-                                            <div class="list-item">
-                                                <div class="profile-image">
-                                                    <img style="width: 50px" class="img-sm rounded-circle" src="../<?php if($infoCorresConv["avatar"]){  echo $infoCorresConv["avatar"]; }else{ echo "image/avatarbasique.png";} ?>" alt="">
+                                            <a href="message.php?idc=<?=$conv["idc"]?>"> <!--  cliquer sur la conevrsation? -->
+                                            <div class="toast fade show">
+                                                <div class="toast-header">
+                                                    <img class="w-25 p-3" src="../<?php if($infoCorresConv["avatar"]){  echo $infoCorresConv["avatar"]; }else{ echo "image/avatarbasique.png";} ?>" alt="">
                                                 </div>
                                                 <p class="user-name"><?=$infoCorresConv["prenom"]; $infoCorresConv["nom"]?></p>
                                                 <p class="chat-time">
@@ -143,7 +145,7 @@ if(isset($_POST["bout_mess"]))
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-8 px-0 d-flex flex-column">
-                                        <div class="chat-container-wrapper" style="height: 350px">
+                                        <div class="chat-container-wrapper">
                                         <?php
                                         if(isset($_GET["idc"]))
                                         foreach($listMessage as $mess){
@@ -154,7 +156,8 @@ if(isset($_POST["bout_mess"]))
                                                             <p><?=$mess["contenu"]?></p>
                                                         </div>
                                                         <div class="sender-details">
-                                                            <img style="width: 50px" class="sender-avatar img-xs rounded-circle" src="../<?php if($infoCorrespondant["avatar"]){  echo $infoCorrespondant["avatar"]; }else{ echo "image/avatarbasique.png";} ?>" alt="profile image">
+
+                                                            
                                                             <p class="seen-text">Message envoyé : <?php
                                                                 $timeMess = date('U') - $mess["time"];
                                                                 if($timeMess < 3600){
@@ -176,7 +179,7 @@ if(isset($_POST["bout_mess"]))
                                                             </p>
                                                         </div>
                                                         <div class="sender-details">
-                                                            <img style="width: 50px" class="sender-avatar img-xs rounded-circle" src="../<?php if($infoUser["avatar"]){  echo $infoUser["avatar"]; }else{ echo "image/avatarbasique.png";} ?>" alt="profile image">
+                                                            
                                                             <p class="seen-text">Message envoyé : <?php
                                                                 $timeMess = date('U')-$mess["time"];
                                                                 if($timeMess < 3600){
@@ -206,17 +209,17 @@ if(isset($_POST["bout_mess"]))
                                 </div>
                                 <?php if(isset($_GET["idc"])): ?>
                                 <div class="col-lg-3 d-none d-lg-block px-0 chat-sidebar">
-                                    <img style="width: 50px" class="img-fluid w-100 text-black" src="../<?= $infoAnnonce["photo"] ?>" alt="profile image">
+                                    <img class="w-100 p-3" src="../<?= $infoAnnonce["photo"] ?>" alt="profile image">
                                     <div class="px-4">
                                         <div class="d-flex pt-4">
                                             <div class="wrapper">
-                                                <h5 class="font-weight-medium mb-0 ellipsis text-black"><?= $infoAnnonce["titre"] ?></h5>
+                                                <h5 class="font-weight-medium mb-0 ellipsis"><?= $infoAnnonce["titre"] ?></h5>
                                             </div>
-                                            <div class="badge badge-gradient-success mb-auto ms-auto text-black"><?= $infoAnnonce["prix"] ?> €</div>
+                                            <div class="badge badge-gradient-success mb-auto ms-auto"><?= $infoAnnonce["prix"] ?> €</div>
                                         </div>
                                         <div class="pt-3">
-                                            <div class="d-flex align-items-center py-1 text-black">
-                                                <p class="mb-0 font-weight-medium text-black"><?= $infoAnnonce["detail"] ?></p>
+                                            <div class="d-flex align-items-center py-1">
+                                                <p class="mb-0 font-weight-medium"><?= $infoAnnonce["detail"] ?></p>
                                             </div>
                                         </div>
 

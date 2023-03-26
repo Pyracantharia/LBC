@@ -1,36 +1,27 @@
-
-
-<footer class="" style="display: flex;
-    justify-content: space-around;">
-
-
-
- <div>
-        <div>
-            <span> Copyright © 2023 Thibault <br>
-                Ceci est un projet qui a été réalisé dans le cadre d'un projet scolaire
-            </span>
-        </div>
-    </div>
-
-
-
-    
-</footer>
-
-<!--Waves Container-->
-<div>
-            <svg class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                <defs>
-                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                </defs>
-                <g class="parallax">
-                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-                </g>
+<footer class="container py-5">
+    <div class="row">
+        <div class="col-12 col-md">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24">
+                <title>Product</title>
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path>
             </svg>
+            <small class="d-block mb-3 text-muted">Copyright © 2023 Thibault</small>
         </div>
-        <!--Waves end-->
+        <div class="col-6 col-md">
+            <h5>Informations sur le site</h5>
+            <ul class="list-unstyled text-small">
+                <li><span> 
+                        Ceci est un projet qui a été réalisé dans le cadre d'un projet scolaire
+                    </span></li>
+
+                    <li><a class="link-secondary" href="#">Conditions générales d’utilisation</a></li>
+                    <li><a class="link-secondary" href="#">Vie privée / cookies</a></li>
+                    <li><a class="link-secondary" href="#">Vos droits et obligations</a></li>
+                    <li><a class="link-secondary" href="#">Conditions générales de vente</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
 

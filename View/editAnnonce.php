@@ -53,7 +53,7 @@ if(isset($_POST["edit"])){
 <html lang="fr">
 <head>
     <title>Modification annonce - Great Deal</title>
-    <?php include 'include/header.php'; ?>  <!-- header présent sur toutes les pages (connexion avec bootstrap) -->
+    <?php include 'include/head.php'; ?>  <!-- header présent sur toutes les pages (connexion avec bootstrap) -->
 </head>
 <body style="background-color: #f2edf3">
 <div class="container-scroller">

@@ -59,7 +59,7 @@ if(isset($_POST["btn"])){ // si le bouton ets cliqué, les informations écrites
 <html lang="fr">
 <head>
     <title>Nouvelle annonce - Great Deal</title>
-    <?php include 'include/header.php'; ?>  <!-- header présent sur toutes les pages (connexion avec bootstrap) -->
+    <?php include 'include/head.php'; ?>  <!-- header présent sur toutes les pages (connexion avec bootstrap) -->
 </head>
 <body class="header">
 <div>
